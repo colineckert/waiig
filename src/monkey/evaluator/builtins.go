@@ -93,6 +93,6 @@ var builtins = map[string]*object.Builtin{
 			newElements[length] = args[1]
 
 			return &object.Array{Elements: newElements}
-		}
+		},
 	},
 }
