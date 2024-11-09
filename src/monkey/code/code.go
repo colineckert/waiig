@@ -68,6 +68,7 @@ func Lookup(op byte) (*Definition, error) {
 	return def, nil
 }
 
+// makes a byte slice of the instruction length and adds opcodes
 func Make(op Opcode, operands ...int) []byte {
 	def, ok := definitions[op]
 	if !ok {
