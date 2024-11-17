@@ -196,7 +196,7 @@ func TestConditionals(t *testing.T) {
 				code.Make(code.OpPop),
 				// 0012
 				code.Make(code.OpConstant, 1),
-				// 0015
+				// 0016
 				code.Make(code.OpPop),
 			},
 		},
