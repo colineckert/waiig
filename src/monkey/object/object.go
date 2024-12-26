@@ -90,13 +90,13 @@ func (f *Function) Inspect() string {
 	return out.String()
 }
 
-type CompiledFuction struct {
+type CompiledFunction struct {
 	Instructions code.Instructions
 }
 
-func (cf *CompiledFuction) Type() ObjectType { return COMPILED_FUNCTION_OBJ }
-func (cf *CompiledFuction) Inspect() string {
-	return fmt.Sprintf("CompiledFuction[%p]", cf)
+func (cf *CompiledFunction) Type() ObjectType { return COMPILED_FUNCTION_OBJ }
+func (cf *CompiledFunction) Inspect() string {
+	return fmt.Sprintf("CompiledFunction[%p]", cf)
 }
 
 type String struct {
